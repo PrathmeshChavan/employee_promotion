@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+		<form action="/predict" , method="POST">
+
+		<center><i><u><h1>Employee Promotion Prediction</h1></u></i></center>
+		<hr><hr>
+
+		<!----------------------------------------------------------------------------------->
+		<center><h2>Employee's Average Training Score</h2></center>
+		<center><h2><input type="text" name="avg_training_score"></h2></center>
+		
+		<!----------------------------------------------------------------------------------->
+		<center><h2>Does Employee Ever won Any Award ?</h2></center>
+		<center><select name="awards_won"></center><br>
+		<center><option value="Yes">Yes</option></center>
+		<center><option value="No">No</option></center>
+				</select>
+		
+		<!----------------------------------------------------------------------------------->
+		<center><h2>Does Employee Met 80% KPI Criteria ?</h2></center>
+		<center><select name="KPIs_met"></center><br>
+		<center><option value="Yes">Yes</option></center>
+		<center><option value="No">No</option></center>
+				</select>
+
+		<!----------------------------------------------------------------------------------->
+		<center><h2>What is Employee's Previous Year Rating ?</h2></center>
+		<center><h2><input type="text" name="previous_year_rating"></h2></center>
+	
+		<!----------------------------------------------------------------------------------->
+		<center><h2>In which Deparment Employee Works ?</h2></center>
+		<center><select name="department_Operations"></center><br>
+		<center><option value="Operations">Operations</option></center>
+		<center><option value="Procurement">Procurement</option></center>
+		<center><option value="Marketing">Marketing</option></center>
+		<center><option value="Technology">Technology</option></center>
+		<center><option value="other">other</option></center>
+				</select><br>
+
+		<!----------------------------------------------------------------------------------->
+
+		<center><button type="submit">Predict</button></center>
+			
+		</form>
+	</div>
+	
+
+
+</body>
+</html>
